@@ -1,0 +1,153 @@
+body {
+  .fonts('Roboto', 1.4);
+  // font-family: 'Roboto', sans-serif;
+  // line-height: 1.4;
+
+    @media @mobile {
+      width: 500px;
+    }
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.text-primary {
+  color: @primary-color-logo;
+}
+
+@media (max-width:500px){
+  h1.logo {
+    font-size: 2.5rem;
+    padding-bottom: 1.6rem;
+  }
+
+  h2.l-heading  {
+    font-size: 2.3rem;
+  }
+
+  p.lead  {
+    font-size: 1rem;
+  }
+}
+
+
+/* Showcase */
+#showcase {
+  background: #333 url('../img/crop4-group-photo-of-children.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+
+  .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 102%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+       /* Overlay */
+    position: absolute;
+    top: 82px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+
+    @media @mobile{
+      top: 135px;
+    }
+  
+  } 
+}
+
+.l-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+  width: 1000px;
+}
+
+.lead   {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  padding-bottom: 1.3rem;
+}
+
+.shadow  {
+   text-shadow: 1px 1px 2px #000;
+}
+
+.shadow-one {
+   text-shadow: 1px 1px 2px #000;
+}
+
+.pitch-one  {
+  padding-top: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(88,88,88,0.4);
+  width: 940px;
+  border-radius: 12px;
+
+
+  @media @mobile {
+    width: 460px; 
+  }
+}
+
+.pitch-two  {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding-top: 1.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgba(88,88,88,0.4);
+  width: 940px;
+  border-radius: 12px;
+
+  @media @mobile {
+    width: 460px;
+  }
+
+}
+
+.btn {
+  display: inline-block;
+  .button-color(white,#93cb52);
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+
+  @media @mobile  {
+    margin-bottom: 2rem;  
+  }
+}
+
+.btn:hover {
+  .button-hover-color();
+}
