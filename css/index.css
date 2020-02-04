@@ -34,32 +34,9 @@ p {
 }
 .l-heading {
   font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 0.3rem;
   line-height: 0.5;
-}
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-}
-.btn {
-  display: inline-block;
-  color: #fff;
-  background: #93cb52;
-  padding: 0.3rem 2rem;
-  border: none;
-  border-radius: 5px;
-}
-.btn:hover {
-  background: #7ab436;
-}
-.list {
-  margin: 0.5rem 0;
-  list-style: none;
-}
-.list li {
-  padding: 0.5rem 0;
-  border-bottom: #444 dotted 1px;
 }
 /* Navbar */
 #navbar {
@@ -69,8 +46,7 @@ p {
   z-index: 1;
 }
 h1 {
-  font-size: 2rem;
-  font-weight: bolc;
+  font-size: 2.3rem;
 }
 .top-navbar {
   display: flex;
@@ -103,14 +79,28 @@ shadow {
   border-bottom: 4px solid #93cb52;
 }
 /* Showcase */
+.l-heading {
+  font-size: 4rem;
+}
+.lead {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  background-color: rgba(88, 88, 88, 0.4);
+  border-radius: 8px;
+}
 .shadow {
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 1px 1px 2px #000;
 }
 .shadow-one {
-  text-shadow: 4px 4px 4px #000;
+  text-shadow: 1px 1px 2px #000;
+}
+.pitch {
+  padding-top: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 #showcase {
-  background: #333 url('../img/crop-group-photo-of-children.jpg') no-repeat center center / cover;
+  background: #333 url('../img/crop4-group-photo-of-children.jpg') no-repeat center center / cover;
   height: 100vh;
   color: #fff;
   margin: 0 auto;
@@ -120,122 +110,27 @@ shadow {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-  padding: 0 2rem;
+  height: 102%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
   /* Overlay */
   position: absolute;
   top: 75px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(10, 60, 120, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-form {
-  display: flex;
-  flex-direction: column;
-  padding-top: 24rem;
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 5px;
 }
-form label {
-  color: white;
-  font-size: 1.3rem;
+.btn:hover {
+  background: #7ab436;
 }
-form #username,
-form #password {
-  color: white;
-  background-color: white;;
-  border-radius: 8px;
-  margin-bottom: 1.3rem;
-  color: #333;
-  text-align: center;
-  padding-top: 0.2rem;
-  padding-bottom: 0.rem;
-  font-size: 1.3rem;
-  opacity: 0.4;
-  border: 1px solid black;
-}
-#lower {
-  padding-top: 1.6rem;
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ Table ]*/
-
-.limiter  {
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 1rem;
-}
-
-.row100.head  {
-  background-color: grey;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 3px;
-
-}
-.table100 {
-  background-color: #fff;
-}
-
-table {
-  width: 100%;
-}
-
-th, td {
-  font-weight: unset;
-  padding-right: 10px;
-}
-
-.column1 {
-  width: 33%;
-  padding-left: 40px;
-}
-
-.column2 {
-  width: 33%;
-  padding-left: 33px;
-}
-
-.column3 {
-  width: 22%;
-  padding: 33px;
-}
-
-
-
-
-.table100-head th {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-.table100-body td {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-/*==================================================================
-[ Fix header ]*/
-.table100 {
-  position: relative;
-  padding-top: 60px;
-}
-
-.table100-head {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.table100-body {
-  max-height: 585px;
-  overflow: auto;
-}
-
-
-
-
-
