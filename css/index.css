@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: #FCB614;
+  z-index: 1;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+#navbar ul li a.current,
+#navbar ul shadow {
+  border-bottom: 4px solid #93cb52;
+}
+h1 {
+  font-size: 2.3rem;
+}
+.top-navbar {
+  display: flex;
+  background: #FCB614;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+  width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .top-navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    align-items: center;
+  }
+}
+body {
+  font-family: 'Roboto';
+  line-height: 1.4;
+}
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+/* Utility Classes */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: #93cb52;
+}
+@media (max-width: 500px) {
+  h1.logo {
+    font-size: 2.5rem;
+    padding-bottom: 1.6rem;
+  }
+  h2.l-heading {
+    font-size: 2.3rem;
+  }
+  p.lead {
+    font-size: 1rem;
+  }
+}
+/* Showcase */
+#showcase {
+  background: #333 url('../img/crop4-group-photo-of-children.jpg') no-repeat center center / cover;
+  height: 100vh;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+}
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 102%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  /* Overlay */
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 500px) {
+  #showcase .showcase-content {
+    top: 135px;
+  }
+}
+.l-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+  width: 1000px;
+}
+.lead {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  padding-bottom: 1.3rem;
+}
+.shadow {
+  text-shadow: 1px 1px 2px #000;
+}
+.shadow-one {
+  text-shadow: 1px 1px 2px #000;
+}
+.pitch-one {
+  padding-top: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(88, 88, 88, 0.4);
+  width: 940px;
+  border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .pitch-one {
+    width: 460px;
+  }
+}
+.pitch-two {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding-top: 1.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgba(88, 88, 88, 0.4);
+  width: 940px;
+  border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .pitch-two {
+    width: 460px;
+  }
+}
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: #93cb52;
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+}
+@media (max-width: 500px) {
+  .btn {
+    margin-bottom: 2rem;
+  }
+}
+.btn:hover {
+  color: #7ab436;
+  background: white;
+}
+#content {
+  margin: 0 auto;
+  padding-left: 15%;
+  background: #333 url('../img/background-about.jpg') no-repeat center center / cover;
+}
+@media (max-width: 500px) {
+  #content {
+    padding-left: 2rem;
+  }
+}
+#content h2 {
+  background-color: grey;
+  color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 2px;
+}
+.team-data h3 {
+  color: #FCB614;
+}
+.team-data h3,
+h4 {
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  padding-right: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.team-data h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 0.3rem;
+  color: white;
+}
+.top-team-data {
+  border-top: 2px solid purple;
+}
+.team-content {
+  display: flex;
+  justify-content: right;
+  width: 500px;
+}
+.team-content img {
+  width: 200px;
+  padding-bottom: 9px;
+  border-top: 2px solid #FCB614;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
